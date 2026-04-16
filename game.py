@@ -1,10 +1,11 @@
-player = {
-    "hp": 30,
-    "ataque": 5,
-    "ouro":0,
-    "inventario":[],
-    "pontuacao":0    
-}
+def criar_player():
+    return {
+        "hp": 30,
+        "ataque": 5,
+        "ouro": 0,
+        "inventario": [],
+        "pontuacao": 0
+    }
 inimigo = {
     "nome": "Rato de Dungeon",
     "hp":15,
@@ -53,5 +54,6 @@ def combate():
             print("Ação inválida! Selecione uma das opções disponíveis!")
     
 if __name__=="__main__":
+    player = criar_player()
     exibir_status()
     combate()
